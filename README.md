@@ -7,23 +7,23 @@
 
 <div style="text-align: center;">
     <p align="center">
-        <img src="P.gif" width="14%">
-        <img src="A.gif" width="14%">
-        <img src="L.gif" width="14%">
-        <img src="A.gif" width="14%">
-        <img src="K.gif" width="14%">
+        <img src="Alphabets/P.gif" width="14%">
+        <img src="Alphabets/A.gif" width="14%">
+        <img src="Alphabets/L.gif" width="14%">
+        <img src="Alphabets/A.gif" width="14%">
+        <img src="Alphabets/K.gif" width="14%">
     </p>
     <p align="center">
-        <img src="D.gif" width="14%">
-        <img src="E.gif" width="14%">
-        <img src="B.gif" width="14%">
+        <img src="Alphabets/D.gif" width="14%">
+        <img src="Alphabets/E.gif" width="14%">
+        <img src="Alphabets/B.gif" width="14%">
     </p>
     <p align="center">
-        <img src="P.gif" width="14%">
-        <img src="A.gif" width="14%">
-        <img src="T.gif" width="14%">
-        <img src="R.gif" width="14%">
-        <img src="A.gif" width="14%">
+        <img src="Alphabets/P.gif" width="14%">
+        <img src="Alphabets/A.gif" width="14%">
+        <img src="Alphabets/T.gif" width="14%">
+        <img src="Alphabets/R.gif" width="14%">
+        <img src="Alphabets/A.gif" width="14%">
     </p>
 </div>
 
