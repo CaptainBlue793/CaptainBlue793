@@ -14,9 +14,11 @@
         <img src="Alphabets/K.gif" width="14%">
     </p>
     <p align="center">
+        <img src="Icons/3ae02a69724e521e484b933d351d3e9a.gif" width="14%">
         <img src="Alphabets/D.gif" width="14%">
         <img src="Alphabets/E.gif" width="14%">
         <img src="Alphabets/B.gif" width="14%">
+        <img src="Icons/3ae02a69724e521e484b933d351d3e9a.gif" width="14%">
     </p>
     <p align="center">
         <img src="Alphabets/P.gif" width="14%">
@@ -61,13 +63,13 @@
   <img width="12" />
   <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/SpaCy_logo.svg" height="35" alt="spacy logo"  />
   <img width="12" />
-  <img src="1_YM2HXc7f4v02pZBEO8h-qw-removebg.png" height="50" alt="nltk logo"  />
+  <img src="Icons/1_YM2HXc7f4v02pZBEO8h-qw-removebg.png" height="50" alt="nltk logo"  />
   <img width="12" />
-  <img src="gensim-circle-removebg-preview.png" height="50" alt="gensim logo"  />
+  <img src="Icons/gensim-circle-removebg-preview.png" height="50" alt="gensim logo"  />
   <img width="12" />
-  <img src="lanchain-removebg-preview.png" height="40" alt="langchain logo"  />
+  <img src="Icons/lanchain-removebg-preview.png" height="40" alt="langchain logo"  />
   <img width="12" />
-  <img src="4169339-middle-removebg-preview.png" height="40" alt="django logo"  />
+  <img src="Icons/4169339-middle-removebg-preview.png" height="40" alt="django logo"  />
 </div>
 
 
@@ -75,7 +77,7 @@
 
 <h4 align="center">SOFTWARE</h4>
 <div align="center">
-  <img src="colab_icon_hphjpb-removebg-preview.png" height="50" alt="colab logo"  />
+  <img src="Icons/colab_icon_hphjpb-removebg-preview.png" height="50" alt="colab logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" height="40" alt="pycharm logo"  />
   <img width="12" />
