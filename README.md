@@ -45,6 +45,12 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="40" alt="java logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" height="40" alt="postgresql logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/html-original.svg" height="40" alt="html logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/css-original.svg" height="40" alt="css logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/javascript-original.svg" height="40" alt="javascript logo"  />
 </div>
 
 <br>
@@ -70,8 +76,6 @@
   <img src="Icons/gensim-circle-removebg-preview.png" height="50" alt="gensim logo"  />
   <img width="12" />
   <img src="Icons/lanchain-removebg-preview.png" height="40" alt="langchain logo"  />
-  <img width="12" />
-  <img src="Icons/4169339-middle-removebg-preview.png" height="40" alt="django logo"  />
 </div>
 
 
