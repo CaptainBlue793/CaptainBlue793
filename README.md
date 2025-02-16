@@ -98,7 +98,7 @@
 <div align="center">
 <a href="https://www.linkedin.com/in/palak-deb-patra-8ba928259/" target="blank"><img align="center" src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Social/linked-in-alt.svg" alt="Palak Deb Patra" height="40" /></a>
 <img width="12" />
-<a href="https://www.leetcode.com/CaptainBlue793" target="blank"><img align="center" src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Social/leet-code.svg" alt="CaptainBlue793" height="40"  /></a>
+<a href="https://www.leetcode.com/BlueMask6" target="blank"><img align="center" src="https://raw.githubusercontent.com/teamedwardforever/Readme-Generator/71f25dd8b98329b168142a6b782a107b75eab178/svg/Social/leet-code.svg" alt="CaptainBlue793" height="40"  /></a>
 <img width="12" />
 <a href="https://huggingface.co/Scarletta975" target="blank"><img align="center" src="https://github.com/huggingface/awesome-huggingface/blob/main/logo.svg" alt="Scarletta975" height="40"  /></a>
 </div>
