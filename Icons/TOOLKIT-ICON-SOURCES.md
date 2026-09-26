@@ -1,6 +1,6 @@
 # Toolkit icon sources
 
-The toolkit SVGs embed their logo geometry locally, without runtime CDN dependencies. Each logo uses a 32×32 viewport within an equal 40×40 square tile; proportions are preserved.
+The toolkit SVGs embed their logo geometry locally, without runtime CDN dependencies. Each logo preserves its proportions in a 32×32 viewport and gently floats within its grid cell. The grid background is transparent, with no icon tiles. Labels and grid lines stay fixed; reduced-motion preferences disable the animation.
 
 - TypeScript: [source](https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg), blob `e1db5f196597f0815d315dfacf4191bb3df75fa4`.
 - MySQL: [source](https://github.com/devicons/devicon/blob/master/icons/mysql/mysql-original.svg), blob `207170c1103aba5d26a3de34ed0735e5f32ea619`.
