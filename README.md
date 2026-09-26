@@ -20,7 +20,7 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="Icons/toolkit-shelves-dark.svg" />
-    <img src="Icons/toolkit-shelves-light.svg" width="72.1%" alt="Languages: Python, C++, Java, PostgreSQL, JavaScript. ML and AI: PyTorch, TensorFlow, scikit-learn, spaCy, OpenCV. Agents and LLMs: LangChain, Claude, Ollama, Hugging Face, Codex. Tools: Git, Jupyter, Anaconda, VS Code, CUDA." />
+    <img src="Icons/toolkit-shelves-light.svg" width="72.1%" alt="Languages: Python, C++, Java, TypeScript, JavaScript. Databases: MySQL, PostgreSQL, Pinecone, Redis, Firebase. Ml &amp; Ai: PyTorch, TensorFlow, scikit-learn, spaCy, OpenCV. Agents &amp; Llms: LangChain, Claude, Ollama, Hugging Face, Codex. Tools: Git, Jupyter, Anaconda, VS Code, CUDA." />
   </picture>
 </p>
 
