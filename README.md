@@ -36,10 +36,7 @@
 </p> -->
 
 <p align="center">
-  <img src="Icons/cube-languages.svg" width="23%" alt="Languages: Python, C++, Java, PostgreSQL" title="Languages: Python, C++, Java, PostgreSQL" />
-  <img src="Icons/cube-ml-ai.svg" width="23%" alt="ML &amp; AI: PyTorch, TensorFlow, scikit-learn, spaCy" title="ML &amp; AI: PyTorch, TensorFlow, scikit-learn, spaCy" />
-  <img src="Icons/cube-agents-llms.svg" width="23%" alt="Agents &amp; LLMs: LangChain, Claude, Ollama, Hugging Face" title="Agents &amp; LLMs: LangChain, Claude, Ollama, Hugging Face" />
-  <img src="Icons/cube-tools.svg" width="23%" alt="Tools: Git, Jupyter, Anaconda, VS Code" title="Tools: Git, Jupyter, Anaconda, VS Code" />
+  <img src="Icons/cube-languages.svg" width="18.025%" alt="Languages: Python, C++, Java, PostgreSQL, JavaScript" title="Languages: Python, C++, Java, PostgreSQL, JavaScript" /><img src="Icons/cube-ml-ai.svg" width="18.025%" alt="ML &amp; AI: PyTorch, TensorFlow, scikit-learn, spaCy, OpenCV" title="ML &amp; AI: PyTorch, TensorFlow, scikit-learn, spaCy, OpenCV" /><img src="Icons/cube-agents-llms.svg" width="18.025%" alt="Agents &amp; LLMs: LangChain, Claude, Ollama, Hugging Face, Codex" title="Agents &amp; LLMs: LangChain, Claude, Ollama, Hugging Face, Codex" /><img src="Icons/cube-tools.svg" width="18.025%" alt="Tools: Git, Jupyter, Anaconda, VS Code, CUDA" title="Tools: Git, Jupyter, Anaconda, VS Code, CUDA" />
 </p>
 
 <!-- <p align="center">
