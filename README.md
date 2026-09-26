@@ -6,27 +6,9 @@
 -->
 
 <div style="text-align: center;">
-    <p align="center">
-        <img src="Alphabets/P.gif" width="14%">
-        <img src="Alphabets/A.gif" width="14%">
-        <img src="Alphabets/L.gif" width="14%">
-        <img src="Alphabets/A.gif" width="14%">
-        <img src="Alphabets/K.gif" width="14%">
-    </p>
-    <p align="center">
-        <img src="Icons/3ae02a69724e521e484b933d351d3e9a.gif" width="14%">
-        <img src="Alphabets/D.gif" width="14%">
-        <img src="Alphabets/E.gif" width="14%">
-        <img src="Alphabets/B.gif" width="14%">
-        <img src="Icons/3ae02a69724e521e484b933d351d3e9a.gif" width="14%">
-    </p>
-    <p align="center">
-        <img src="Alphabets/P.gif" width="14%">
-        <img src="Alphabets/A.gif" width="14%">
-        <img src="Alphabets/T.gif" width="14%">
-        <img src="Alphabets/R.gif" width="14%">
-        <img src="Alphabets/A.gif" width="14%">
-    </p>
+    <p align="center"><img src="Alphabets/P.gif" width="14.42%"><img src="Alphabets/A.gif" width="14.42%"><img src="Alphabets/L.gif" width="14.42%"><img src="Alphabets/A.gif" width="14.42%"><img src="Alphabets/K.gif" width="14.42%"></p>
+    <p align="center"><img src="Icons/3ae02a69724e521e484b933d351d3e9a.gif" width="14.42%"><img src="Alphabets/D.gif" width="14.42%"><img src="Alphabets/E.gif" width="14.42%"><img src="Alphabets/B.gif" width="14.42%"><img src="Icons/3ae02a69724e521e484b933d351d3e9a.gif" width="14.42%"></p>
+    <p align="center"><img src="Alphabets/P.gif" width="14.42%"><img src="Alphabets/A.gif" width="14.42%"><img src="Alphabets/T.gif" width="14.42%"><img src="Alphabets/R.gif" width="14.42%"><img src="Alphabets/A.gif" width="14.42%"></p>
 </div>
 
 <br>
@@ -36,7 +18,10 @@
 </p> -->
 
 <p align="center">
-  <img src="Icons/cube-languages.svg" width="18.025%" alt="Languages: Python, C++, Java, PostgreSQL, JavaScript" title="Languages: Python, C++, Java, PostgreSQL, JavaScript" /><img src="Icons/cube-ml-ai.svg" width="18.025%" alt="ML &amp; AI: PyTorch, TensorFlow, scikit-learn, spaCy, OpenCV" title="ML &amp; AI: PyTorch, TensorFlow, scikit-learn, spaCy, OpenCV" /><img src="Icons/cube-agents-llms-parrot.svg" width="18.025%" alt="Agents &amp; LLMs: LangChain, Claude, Ollama, Hugging Face, Codex" title="Agents &amp; LLMs: LangChain, Claude, Ollama, Hugging Face, Codex" /><img src="Icons/cube-tools.svg" width="18.025%" alt="Tools: Git, Jupyter, Anaconda, VS Code, CUDA" title="Tools: Git, Jupyter, Anaconda, VS Code, CUDA" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="Icons/toolkit-shelves-dark.svg" />
+    <img src="Icons/toolkit-shelves-light.svg" width="72.1%" alt="Languages: Python, C++, Java, TypeScript, JavaScript. Databases: MySQL, PostgreSQL, Pinecone, Redis, Firebase. Ml &amp; Ai: PyTorch, TensorFlow, scikit-learn, spaCy, OpenCV. Agents &amp; Llms: LangChain, Claude, Ollama, Hugging Face, Codex. Tools: Git, Jupyter, Anaconda, VS Code, CUDA." />
+  </picture>
 </p>
 
 <!-- <p align="center">
