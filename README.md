@@ -36,7 +36,12 @@
 </p> -->
 
 <p align="center">
-  <img src="Icons/cube-languages.svg" width="18.025%" alt="Languages: Python, C++, Java, PostgreSQL, JavaScript" title="Languages: Python, C++, Java, PostgreSQL, JavaScript" /><img src="Icons/cube-ml-ai.svg" width="18.025%" alt="ML &amp; AI: PyTorch, TensorFlow, scikit-learn, spaCy, OpenCV" title="ML &amp; AI: PyTorch, TensorFlow, scikit-learn, spaCy, OpenCV" /><img src="Icons/cube-agents-llms-parrot.svg" width="18.025%" alt="Agents &amp; LLMs: LangChain, Claude, Ollama, Hugging Face, Codex" title="Agents &amp; LLMs: LangChain, Claude, Ollama, Hugging Face, Codex" /><img src="Icons/cube-tools.svg" width="18.025%" alt="Tools: Git, Jupyter, Anaconda, VS Code, CUDA" title="Tools: Git, Jupyter, Anaconda, VS Code, CUDA" />
+  <picture>
+    <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="Icons/toolkit-dark-mobile.svg" />
+    <source media="(max-width: 600px)" srcset="Icons/toolkit-light-mobile.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="Icons/toolkit-dark-desktop.svg" />
+    <img src="Icons/toolkit-light-desktop.svg" width="880" alt="My toolkit. Languages and Data: Python, C++, Java, PostgreSQL, JavaScript. ML and AI: PyTorch, TensorFlow, scikit-learn, spaCy, OpenCV. Agents and LLMs: LangChain, Claude, Ollama, Hugging Face, Codex. Development Tools: Git, Jupyter, Anaconda, VS Code, CUDA." />
+  </picture>
 </p>
 
 <!-- <p align="center">
