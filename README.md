@@ -27,7 +27,7 @@
 <tr><td><b>JS FRAMEWORKS</b></td><td><img src="https://skillicons.dev/icons?i=react,nextjs&theme=dark" height="48" alt="React, Next.js"></td></tr>
 <tr><td><b>DEPLOYMENT</b></td><td><img src="https://skillicons.dev/icons?i=aws,azure&theme=dark" height="48" alt="AWS, Azure"></td></tr>
 <tr><td><b>LLMs</b></td><td><img src="Icons/tech/claude.svg" width="48" height="48" alt="claude"> <img src="Icons/tech/codex.svg" width="48" height="48" alt="codex"> <img src="Icons/tech/ollama.svg" width="48" height="48" alt="ollama"> <img src="Icons/tech/huggingface.svg" width="48" height="48" alt="huggingface"></td></tr>
-<tr><td><b>TOOLS</b></td><td><img src="https://skillicons.dev/icons?i=git,jupyter,anaconda,graphql&theme=dark" height="48" alt="Git, Jupyter, Anaconda, GraphQL"> <img src="Icons/tech/cuda.svg" width="48" height="48" alt="cuda"></td></tr>
+<tr><td><b>TOOLS</b></td><td><img src="https://skillicons.dev/icons?i=git&theme=dark" height="48" alt="Git"> <img src="Icons/tech/jupyter.svg" width="48" height="48" alt="Jupyter"> <img src="https://skillicons.dev/icons?i=anaconda,graphql&theme=dark" height="48" alt="Anaconda, GraphQL"> <img src="Icons/tech/cuda.svg" width="48" height="48" alt="cuda"></td></tr>
 </table>
 
 <!-- <p align="center">
