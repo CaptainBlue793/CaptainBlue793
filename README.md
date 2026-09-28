@@ -17,18 +17,9 @@
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:01FEC5,50:4201FF,100:F401FF&height=6" width="72.1%" />
 </p> -->
 
-<table align="center" width="72.1%">
-<tr><td><b>LANGUAGES</b></td><td><img src="https://skillicons.dev/icons?i=python,cpp,java,js&theme=dark" height="48" alt="Python, C++, Java, JavaScript"></td></tr>
-<tr><td><b>ML</b></td><td><img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn&theme=dark" height="48" alt="PyTorch, TensorFlow, scikit-learn"></td></tr>
-<tr><td><b>AI</b></td><td><img src="Icons/tech/langchain.svg" width="48" height="48" alt="langchain"> <img src="Icons/tech/huggingface.svg" width="48" height="48" alt="huggingface"></td></tr>
-<tr><td><b>NLP</b></td><td><img src="Icons/tech/spacy.svg" width="48" height="48" alt="spacy"> <img src="Icons/tech/nltk.svg" width="48" height="48" alt="nltk"> <img src="Icons/tech/transformers.svg" width="48" height="48" alt="transformers"></td></tr>
-<tr><td><b>COMPUTER VISION</b></td><td><img src="https://skillicons.dev/icons?i=opencv,pytorch&theme=dark" height="48" alt="OpenCV, PyTorch"></td></tr>
-<tr><td><b>DATABASES</b></td><td><img src="https://skillicons.dev/icons?i=postgres,mysql&theme=dark" height="48" alt="PostgreSQL, MySQL"> <img src="Icons/tech/pinecone.svg" width="48" height="48" alt="pinecone"></td></tr>
-<tr><td><b>JS FRAMEWORKS</b></td><td><img src="https://skillicons.dev/icons?i=react,nextjs&theme=dark" height="48" alt="React, Next.js"></td></tr>
-<tr><td><b>DEPLOYMENT</b></td><td><img src="https://skillicons.dev/icons?i=aws,azure&theme=dark" height="48" alt="AWS, Azure"></td></tr>
-<tr><td><b>LLMs</b></td><td><img src="Icons/tech/claude.svg" width="48" height="48" alt="claude"> <img src="Icons/tech/codex.svg" width="48" height="48" alt="codex"> <img src="Icons/tech/ollama.svg" width="48" height="48" alt="ollama"> <img src="Icons/tech/huggingface.svg" width="48" height="48" alt="huggingface"></td></tr>
-<tr><td><b>TOOLS</b></td><td><img src="https://skillicons.dev/icons?i=git&theme=dark" height="48" alt="Git"> <img src="Icons/tech/jupyter.svg" width="48" height="48" alt="Jupyter"> <img src="https://skillicons.dev/icons?i=anaconda,graphql&theme=dark" height="48" alt="Anaconda, GraphQL"> <img src="Icons/tech/cuda.svg" width="48" height="48" alt="cuda"></td></tr>
-</table>
+<p align="center">
+  <img src="Icons/tech/stack-grid.svg" width="72.1%" alt="Tech stack: Languages, ML, AI, NLP, Computer Vision, Databases, JS Frameworks, Deployment, LLMs, and Tools">
+</p>
 
 <!-- <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:01FEC5,50:4201FF,100:F401FF&height=6" width="72.1%" />
