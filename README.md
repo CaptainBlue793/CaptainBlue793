@@ -22,7 +22,7 @@
 <tr><td><b>ML</b></td><td><img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn&theme=dark" height="48" alt="PyTorch, TensorFlow, scikit-learn"></td></tr>
 <tr><td><b>AI</b></td><td><img src="Icons/tech/langchain.svg" width="48" height="48" alt="langchain"> <img src="Icons/tech/huggingface.svg" width="48" height="48" alt="huggingface"></td></tr>
 <tr><td><b>NLP</b></td><td><img src="Icons/tech/spacy.svg" width="48" height="48" alt="spacy"> <img src="Icons/tech/nltk.svg" width="48" height="48" alt="nltk"> <img src="Icons/tech/transformers.svg" width="48" height="48" alt="transformers"></td></tr>
-<tr><td><b>COMPUTER VISION</b></td><td><img src="https://skillicons.dev/icons?i=opencv,pytorch&theme=dark" height="48" alt="OpenCV, PyTorch"> <img src="Icons/tech/torchvision.svg" width="48" height="48" alt="torchvision"></td></tr>
+<tr><td><b>COMPUTER VISION</b></td><td><img src="https://skillicons.dev/icons?i=opencv,pytorch&theme=dark" height="48" alt="OpenCV, PyTorch"></td></tr>
 <tr><td><b>DATABASES</b></td><td><img src="https://skillicons.dev/icons?i=postgres,mysql&theme=dark" height="48" alt="PostgreSQL, MySQL"> <img src="Icons/tech/pinecone.svg" width="48" height="48" alt="pinecone"></td></tr>
 <tr><td><b>JS FRAMEWORKS</b></td><td><img src="https://skillicons.dev/icons?i=react,nextjs&theme=dark" height="48" alt="React, Next.js"></td></tr>
 <tr><td><b>DEPLOYMENT</b></td><td><img src="https://skillicons.dev/icons?i=aws,azure&theme=dark" height="48" alt="AWS, Azure"></td></tr>
