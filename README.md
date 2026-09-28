@@ -17,7 +17,7 @@
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:01FEC5,50:4201FF,100:F401FF&height=6" width="72.1%" />
 </p> -->
 
-<table align="center">
+<table align="center" width="72.1%">
 <tr><td><b>LANGUAGES</b></td><td><img src="https://skillicons.dev/icons?i=python,cpp,java,js&theme=dark" height="48" alt="Python, C++, Java, JavaScript"></td></tr>
 <tr><td><b>ML</b></td><td><img src="https://skillicons.dev/icons?i=pytorch,tensorflow,sklearn&theme=dark" height="48" alt="PyTorch, TensorFlow, scikit-learn"></td></tr>
 <tr><td><b>AI</b></td><td><img src="Icons/tech/langchain.svg" width="48" height="48" alt="langchain"> <img src="Icons/tech/huggingface.svg" width="48" height="48" alt="huggingface"></td></tr>
