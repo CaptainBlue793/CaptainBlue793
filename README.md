@@ -18,7 +18,7 @@
 </p> -->
 
 <p align="center">
-  <img src="Icons/tech/stack-grid.svg" width="72.1%" alt="Tech stack: Languages; ML and AI; Databases; JS Frameworks; LLMs; Tools">
+  <img src="Icons/tech/stack-grid.svg" width="72.1%" alt="Tech stack: Languages; ML and AI including LangChain and LangGraph; Databases including Redis; LLMs; Tools including REST and GraphQL">
 </p>
 
 <!-- <p align="center">
