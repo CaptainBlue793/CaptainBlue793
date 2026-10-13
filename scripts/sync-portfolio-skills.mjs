@@ -34,6 +34,11 @@ const themes = {
   light: { text: '#536171', ink: '#181717', border: '#dce3ec', colors: ['#155dc6', '#147543', '#7a3bb8', '#00747e', '#8b5700', '#bb354a', '#ab2b80'] },
 };
 const escape = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('"', '&quot;');
+const fontSize = 24;
+const iconSize = 32;
+const characterWidth = fontSize * 0.6;
+const listStart = 304;
+const lineHeight = 48;
 function icon(name, theme, accent) {
   const key = name.startsWith('AWS') ? 'AWS' : name;
   if (assets[key]) {
@@ -65,23 +70,30 @@ for (const [theme, palette] of Object.entries(themes)) {
   let top = 0;
   const body = rows.map(({ title, items }, index) => {
     const accent = palette.colors[index % palette.colors.length];
-    let x = 320;
+    let x = listStart;
     let line = 0;
     const technologies = items.map(name => {
-      const width = 32 + name.length * 10.8;
-      if (x + width > 1024 && x > 320) { x = 320; line += 1; }
-      const y = top + 16 + line * 38;
-      const item = `<g aria-label="${escape(name)}"><title>${escape(name)}</title><g transform="translate(${x} ${y})">${icon(name, theme, accent)}</g><text x="${x + 32}" y="${y + 18}" fill="${palette.text}">${escape(name)}</text></g>`;
+      const width = iconSize + 10 + name.length * characterWidth;
+      if (x + width > 1024 && x > listStart) { x = listStart; line += 1; }
+      const y = top + 20 + line * lineHeight;
+      const item = `<g aria-label="${escape(name)}"><title>${escape(name)}</title><g transform="translate(${x} ${y}) scale(${iconSize / 24})">${icon(name, theme, accent)}</g><text x="${x + iconSize + 10}" y="${y + fontSize}" fill="${palette.text}">${escape(name)}</text></g>`;
       x += width + 24;
       return item;
     }).join('\n');
-    const height = 58 + line * 38;
-    const row = `<g data-category="${escape(title)}"><text x="16" y="${top + 34}" fill="${accent}" font-weight="600">&gt;&gt; ${escape(title)}</text>\n${technologies}</g>`;
+    const headingLines = [];
+    for (const word of title.split(' ')) {
+      const last = headingLines.length - 1;
+      if (last < 0 || (headingLines[last].length + word.length + 1) * characterWidth > listStart - 80) headingLines.push(word);
+      else headingLines[last] += ` ${word}`;
+    }
+    const heading = headingLines.map((text, headingLine) => `<tspan x="59" y="${top + 44 + headingLine * 32}">${escape(text)}</tspan>`).join('');
+    const height = Math.max(80 + line * lineHeight, 80 + (headingLines.length - 1) * 32);
+    const row = `<g data-category="${escape(title)}"><text x="16" y="${top + 44}" fill="${accent}" font-weight="600">&gt;&gt;</text><text fill="${accent}" font-weight="600">${heading}</text>\n${technologies}</g>`;
     top += height;
     return row + (index < rows.length - 1 ? `\n<path d="M16 ${top}H1024" stroke="${palette.border}" stroke-dasharray="4 5"/>` : '');
   }).join('\n');
   const description = rows.map(row => `${row.title}: ${row.items.join(', ')}`).join('; ');
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="${top}" viewBox="0 0 1040 ${top}" role="img" aria-labelledby="title desc" font-family="Consolas,Liberation Mono,monospace" font-size="18">\n<title id="title">Palak Deb Patra — Skills</title>\n<desc id="desc">${escape(description)}</desc>\n${body}\n</svg>\n`;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="${top}" viewBox="0 0 1040 ${top}" role="img" aria-labelledby="title desc" font-family="Consolas,Liberation Mono,monospace" font-size="${fontSize}">\n<title id="title">Palak Deb Patra — Skills</title>\n<desc id="desc">${escape(description)}</desc>\n${body}\n</svg>\n`;
   writeFileSync(resolve(root, `Icons/tech/skills-${theme}.svg`), svg);
 }
 console.log(`Synced ${rows.length} categories and ${rows.reduce((count, row) => count + row.items.length, 0)} technologies from ${portfolio}.`);
