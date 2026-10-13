@@ -30,14 +30,15 @@ const simple = {
   GraphQL: 'siGraphql', Git: 'siGit', GitHub: 'siGithub',
 };
 const themes = {
-  dark: { text: '#F0F6FC', ink: '#ffffff' },
-  light: { text: '#24292F', ink: '#181717' },
+  dark: { text: '#F0F6FC', caption: '#c2c2c2', ink: '#ffffff' },
+  light: { text: '#24292F', caption: '#536171', ink: '#181717' },
 };
 const escape = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('"', '&quot;');
 const canvasWidth = 676.6;
 const iconSize = 48;
 const iconStep = 60;
-const rowHeight = 60;
+const rowHeight = 88;
+const rightPadding = 12;
 function icon(name, theme, accent) {
   const key = name.startsWith('AWS') ? 'AWS' : name;
   if (assets[key]) {
@@ -68,10 +69,14 @@ function icon(name, theme, accent) {
 for (const [theme, palette] of Object.entries(themes)) {
   const body = rows.map(({ title, items }, index) => {
     const top = index * rowHeight;
-    const start = canvasWidth - iconSize - (items.length - 1) * iconStep;
+    const start = canvasWidth - rightPadding - iconSize - (items.length - 1) * iconStep;
     const technologies = items.map((name, itemIndex) => {
       const x = (start + itemIndex * iconStep).toFixed(1);
-      return `<g aria-label="${escape(name)}"><title>${escape(name)}</title><g transform="translate(${x} ${top + 6}) scale(${iconSize / 24})">${icon(name, theme, palette.text)}</g></g>`;
+      const center = (Number(x) + iconSize / 2).toFixed(1);
+      const lines = name.startsWith('AWS') ? ['AWS', name.slice(4)]
+        : name === 'NVIDIA CUDA' ? ['NVIDIA', 'CUDA'] : [name];
+      const caption = lines.map((line, lineIndex) => `<tspan x="${center}" y="${top + 68 + lineIndex * 12}">${escape(line)}</tspan>`).join('');
+      return `<g aria-label="${escape(name)}"><title>${escape(name)}</title><g transform="translate(${x} ${top + 6}) scale(${iconSize / 24})">${icon(name, theme, palette.text)}</g><text fill="${palette.caption}" font-size="10" text-anchor="middle">${caption}</text></g>`;
     }).join('\n');
     return `<g data-category="${escape(title)}"><text x="0" y="${top + 36}" fill="${palette.text}" font-size="15" font-weight="700" letter-spacing="0.65">${escape(title.toUpperCase())}</text>\n${technologies}</g>`;
   }).join('\n');

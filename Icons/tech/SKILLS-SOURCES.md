@@ -2,9 +2,11 @@
 
 `skills-dark.svg` and `skills-light.svg` mirror the categories, order, technology
 names and brand icons in `Portfolio/src/content.ts` and `Portfolio/src/BrandIcon.tsx`.
-They restore the original logo-only row design: neutral uppercase category
-labels on the left, right-aligned brand logos, transparent backgrounds, and
-no tiles, terminal markers, or dividers. Rows are 60 units high with 48-unit logos.
+They retain the original row design: neutral uppercase category labels on the
+left, right-aligned brand logos, transparent backgrounds, and no tiles, terminal
+markers, or dividers. Each logo has a small centered technology name below it.
+Rows are 88 units high with 48-unit logos and 10-unit captions. NVIDIA CUDA and
+AWS service details use two caption lines to keep the labels readable.
 All eight categories and 30 technologies are preserved in their original order.
 Technology names and AWS service details remain in accessible labels, SVG
 titles/descriptions, and the README image's alternative text.
