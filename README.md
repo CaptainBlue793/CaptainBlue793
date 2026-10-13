@@ -18,7 +18,11 @@
 </p> -->
 
 <p align="center">
-  <img src="Icons/tech/stack-grid.svg" width="72.1%" alt="Tech stack: Languages; ML and AI including LangChain; Databases including Redis; LLMs; Tools including REST and GraphQL">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="Icons/tech/skills-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="Icons/tech/skills-light.svg">
+    <img src="Icons/tech/skills-light.svg" width="72.1%" alt="Programming Languages: Python, Java, C++, JavaScript, TypeScript, SQL. Databases: Snowflake, Oracle, MySQL, ChromaDB. AI/ML: PyTorch, TensorFlow, scikit-learn, OpenCV, spaCy, NLTK, NVIDIA CUDA. Agent Systems: LangGraph, LangChain, Ollama. Web Interfaces: React, Angular, Streamlit. APIs: FastAPI, REST APIs, GraphQL. Cloud: AWS (S3, EC2, RDS). Development: Git, GitHub, Jupyter.">
+  </picture>
 </p>
 
 <!-- <p align="center">
