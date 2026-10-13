@@ -1,11 +1,13 @@
 # Profile skills
 
 `skills-dark.svg` and `skills-light.svg` mirror the categories, order, technology
-names, brand icons, and category colors in `Portfolio/src/content.ts`,
-`Portfolio/src/BrandIcon.tsx`, and `Portfolio/src/styles.css`.
-They use category rows, inline icon/name pairs, and dashed dividers.
-Text uses 24-unit type and icons use 32-unit squares. Technology lists wrap
-between whole icon/name pairs, and long category names wrap within their column.
+names and brand icons in `Portfolio/src/content.ts` and `Portfolio/src/BrandIcon.tsx`.
+They restore the original logo-only row design: neutral uppercase category
+labels on the left, right-aligned brand logos, transparent backgrounds, and
+no tiles, terminal markers, or dividers. Rows are 60 units high with 48-unit logos.
+All eight categories and 30 technologies are preserved in their original order.
+Technology names and AWS service details remain in accessible labels, SVG
+titles/descriptions, and the README image's alternative text.
 All images are embedded locally; no icon service is needed to display them.
 
 To refresh from the sibling portfolio with its dependencies installed, run from
