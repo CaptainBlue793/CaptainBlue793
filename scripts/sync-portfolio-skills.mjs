@@ -82,7 +82,7 @@ for (const [theme, palette] of Object.entries(themes)) {
   const body = rows.map(({ title, items }) => {
     const top = height;
     height += rowHeight + (title === 'Deployment' ? 24 : 0);
-    const step = title === 'Deployment' ? 140 : iconStep;
+    const step = title === 'Deployment' ? 100 : iconStep;
     const padding = title === 'Deployment' ? 40 : rightPadding;
     const start = canvasWidth - padding - iconSize - (items.length - 1) * step;
     const technologies = items.map((name, itemIndex) => {

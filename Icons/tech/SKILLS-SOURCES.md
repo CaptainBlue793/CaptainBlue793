@@ -8,7 +8,7 @@ They retain the original row design: neutral uppercase category labels on the
 left, right-aligned brand logos, transparent backgrounds, and no tiles, terminal
 markers, or dividers. Each logo has a small centered technology name below it.
 Rows are 88 units high with 48-unit logos and 10-unit captions. Deployment uses
-112 units and wider spacing to fit the AWS and Azure service captions.
+112 units and 100-unit icon spacing to fit the AWS and Azure service captions.
 All eight categories and 30 technologies are displayed.
 Technology names and cloud service details remain in accessible labels, SVG
 titles/descriptions, and the README image's alternative text.
