@@ -15,6 +15,16 @@ if (!section) throw new Error('Cannot locate the portfolio Skills section.');
 const rows = [...section.matchAll(/title: '([^']+)',\s*description: '([^']+)'/g)]
   .map(([, title, description]) => ({ title, items: description.split(' · ') }));
 if (!rows.length) throw new Error('No portfolio skills found.');
+// Keep profile-specific edits when refreshing from the portfolio.
+for (const row of rows) {
+  row.items = row.items.filter(name => name !== 'GitHub');
+  if (row.title === 'Cloud' || row.title === 'Deployment') {
+    row.title = 'Deployment';
+    if (!row.items.some(name => name.startsWith('Azure'))) {
+      row.items.push('Azure (Blob Storage, Azure VM, Azure SQL Database)');
+    }
+  }
+}
 
 const assets = {
   Python: 'python.svg', Java: 'java.svg', Oracle: 'oracle.svg', MySQL: 'mysql.svg',
@@ -27,7 +37,7 @@ const simple = {
   Snowflake: 'siSnowflake', PyTorch: 'siPytorch', TensorFlow: 'siTensorflow',
   spaCy: 'siSpacy', 'NVIDIA CUDA': 'siNvidia', Ollama: 'siOllama',
   React: 'siReact', Streamlit: 'siStreamlit', FastAPI: 'siFastapi',
-  GraphQL: 'siGraphql', Git: 'siGit', GitHub: 'siGithub',
+  GraphQL: 'siGraphql', Git: 'siGit',
 };
 const themes = {
   dark: { text: '#F0F6FC', caption: '#c2c2c2', ink: '#ffffff' },
@@ -40,7 +50,8 @@ const iconStep = 60;
 const rowHeight = 88;
 const rightPadding = 12;
 function icon(name, theme, accent) {
-  const key = name.startsWith('AWS') ? 'AWS' : name;
+  const key = name.startsWith('AWS') ? 'AWS' : name.startsWith('Azure') ? 'Azure' : name;
+  if (key === 'Azure') return readFileSync(resolve(root, 'Icons/tech/azure.svg'), 'utf8');
   if (assets[key]) {
     const file = key === 'AWS' && theme === 'dark' ? 'aws-dark.svg' : assets[key];
     const data = readFileSync(resolve(portfolio, 'public/images/brands', file));
@@ -67,13 +78,18 @@ function icon(name, theme, accent) {
 }
 
 for (const [theme, palette] of Object.entries(themes)) {
-  const body = rows.map(({ title, items }, index) => {
-    const top = index * rowHeight;
-    const start = canvasWidth - rightPadding - iconSize - (items.length - 1) * iconStep;
+  let height = 0;
+  const body = rows.map(({ title, items }) => {
+    const top = height;
+    height += rowHeight + (title === 'Deployment' ? 24 : 0);
+    const step = title === 'Deployment' ? 140 : iconStep;
+    const padding = title === 'Deployment' ? 40 : rightPadding;
+    const start = canvasWidth - padding - iconSize - (items.length - 1) * step;
     const technologies = items.map((name, itemIndex) => {
-      const x = (start + itemIndex * iconStep).toFixed(1);
+      const x = (start + itemIndex * step).toFixed(1);
       const center = (Number(x) + iconSize / 2).toFixed(1);
       const lines = name.startsWith('AWS') ? ['AWS', name.slice(4)]
+        : name.startsWith('Azure') ? ['Azure', '(Blob Storage, Azure VM,', 'Azure SQL Database)']
         : name === 'NVIDIA CUDA' ? ['NVIDIA', 'CUDA'] : [name];
       const caption = lines.map((line, lineIndex) => `<tspan x="${center}" y="${top + 68 + lineIndex * 12}">${escape(line)}</tspan>`).join('');
       return `<g aria-label="${escape(name)}"><title>${escape(name)}</title><g transform="translate(${x} ${top + 6}) scale(${iconSize / 24})">${icon(name, theme, palette.text)}</g><text fill="${palette.caption}" font-size="10" text-anchor="middle">${caption}</text></g>`;
@@ -81,7 +97,6 @@ for (const [theme, palette] of Object.entries(themes)) {
     return `<g data-category="${escape(title)}"><text x="0" y="${top + 36}" fill="${palette.text}" font-size="15" font-weight="700" letter-spacing="0.65">${escape(title.toUpperCase())}</text>\n${technologies}</g>`;
   }).join('\n');
   const description = rows.map(row => `${row.title}: ${row.items.join(', ')}`).join('; ');
-  const height = rows.length * rowHeight;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${canvasWidth}" height="${height}" viewBox="0 0 ${canvasWidth} ${height}" role="img" aria-labelledby="title desc" font-family="Arial,Helvetica,sans-serif">\n<title id="title">Palak Deb Patra — Skills</title>\n<desc id="desc">${escape(description)}</desc>\n${body}\n</svg>\n`;
   writeFileSync(resolve(root, `Icons/tech/skills-${theme}.svg`), svg);
 }
