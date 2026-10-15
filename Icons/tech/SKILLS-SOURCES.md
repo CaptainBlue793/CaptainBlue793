@@ -3,14 +3,13 @@
 `skills-dark.svg` and `skills-light.svg` use the categories, order, technology
 names and brand icons in `Portfolio/src/content.ts` and `Portfolio/src/BrandIcon.tsx`,
 with profile overrides: omit GitHub and rename Cloud to Deployment, adding Azure
-(Blob Storage, Azure VM, Azure SQL Database) alongside AWS.
+alongside AWS. Both cloud providers use their names without service details.
 They retain the original row design: neutral uppercase category labels on the
 left, right-aligned brand logos, transparent backgrounds, and no tiles, terminal
 markers, or dividers. Each logo has a small centered technology name below it.
-Rows are 88 units high with 48-unit logos and 10-unit captions. Deployment uses
-112 units and 100-unit icon spacing to fit the AWS and Azure service captions.
+Rows are 88 units high with 48-unit logos, 60-unit icon spacing and 10-unit captions.
 All eight categories and 30 technologies are displayed.
-Technology names and cloud service details remain in accessible labels, SVG
+Technology names remain in accessible labels, SVG
 titles/descriptions, and the README image's alternative text.
 All images are embedded locally; no icon service is needed to display them.
 

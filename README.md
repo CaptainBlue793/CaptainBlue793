@@ -19,9 +19,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="Icons/tech/skills-dark.svg?v=eae2984">
-    <source media="(prefers-color-scheme: light)" srcset="Icons/tech/skills-light.svg?v=eae2984">
-    <img src="Icons/tech/skills-light.svg?v=eae2984" width="72.1%" alt="Programming Languages: Python, Java, C++, JavaScript, TypeScript, SQL. Databases: Snowflake, Oracle, MySQL, ChromaDB. AI/ML: PyTorch, TensorFlow, scikit-learn, OpenCV, spaCy, NLTK, NVIDIA CUDA. Agent Systems: LangGraph, LangChain, Ollama. Web Interfaces: React, Angular, Streamlit. APIs: FastAPI, REST APIs, GraphQL. Deployment: AWS (S3, EC2, RDS), Azure (Blob Storage, Azure VM, Azure SQL Database). Development: Git, Jupyter.">
+    <source media="(prefers-color-scheme: dark)" srcset="Icons/tech/skills-dark.svg?v=aws-azure-labels">
+    <source media="(prefers-color-scheme: light)" srcset="Icons/tech/skills-light.svg?v=aws-azure-labels">
+    <img src="Icons/tech/skills-light.svg?v=aws-azure-labels" width="72.1%" alt="Programming Languages: Python, Java, C++, JavaScript, TypeScript, SQL. Databases: Snowflake, Oracle, MySQL, ChromaDB. AI/ML: PyTorch, TensorFlow, scikit-learn, OpenCV, spaCy, NLTK, NVIDIA CUDA. Agent Systems: LangGraph, LangChain, Ollama. Web Interfaces: React, Angular, Streamlit. APIs: FastAPI, REST APIs, GraphQL. Deployment: AWS, Azure. Development: Git, Jupyter.">
   </picture>
 </p>
 

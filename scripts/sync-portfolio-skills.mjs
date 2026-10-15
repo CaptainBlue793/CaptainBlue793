@@ -20,8 +20,9 @@ for (const row of rows) {
   row.items = row.items.filter(name => name !== 'GitHub');
   if (row.title === 'Cloud' || row.title === 'Deployment') {
     row.title = 'Deployment';
-    if (!row.items.some(name => name.startsWith('Azure'))) {
-      row.items.push('Azure (Blob Storage, Azure VM, Azure SQL Database)');
+    row.items = row.items.map(name => name.replace(/^(AWS|Azure)\s*\(.*\)$/, '$1'));
+    if (!row.items.includes('Azure')) {
+      row.items.push('Azure');
     }
   }
 }
@@ -81,16 +82,12 @@ for (const [theme, palette] of Object.entries(themes)) {
   let height = 0;
   const body = rows.map(({ title, items }) => {
     const top = height;
-    height += rowHeight + (title === 'Deployment' ? 24 : 0);
-    const step = title === 'Deployment' ? 100 : iconStep;
-    const padding = title === 'Deployment' ? 40 : rightPadding;
-    const start = canvasWidth - padding - iconSize - (items.length - 1) * step;
+    height += rowHeight;
+    const start = canvasWidth - rightPadding - iconSize - (items.length - 1) * iconStep;
     const technologies = items.map((name, itemIndex) => {
-      const x = (start + itemIndex * step).toFixed(1);
+      const x = (start + itemIndex * iconStep).toFixed(1);
       const center = (Number(x) + iconSize / 2).toFixed(1);
-      const lines = name.startsWith('AWS') ? ['AWS', name.slice(4)]
-        : name.startsWith('Azure') ? ['Azure', '(Blob Storage, Azure VM,', 'Azure SQL Database)']
-        : name === 'NVIDIA CUDA' ? ['NVIDIA', 'CUDA'] : [name];
+      const lines = name === 'NVIDIA CUDA' ? ['NVIDIA', 'CUDA'] : [name];
       const caption = lines.map((line, lineIndex) => `<tspan x="${center}" y="${top + 68 + lineIndex * 12}">${escape(line)}</tspan>`).join('');
       return `<g aria-label="${escape(name)}"><title>${escape(name)}</title><g transform="translate(${x} ${top + 6}) scale(${iconSize / 24})">${icon(name, theme, palette.text)}</g><text fill="${palette.caption}" font-size="10" text-anchor="middle">${caption}</text></g>`;
     }).join('\n');
