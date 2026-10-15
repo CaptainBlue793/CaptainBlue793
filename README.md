@@ -19,9 +19,9 @@
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="Icons/tech/skills-dark.svg?v=aws-azure-labels">
-    <source media="(prefers-color-scheme: light)" srcset="Icons/tech/skills-light.svg?v=aws-azure-labels">
-    <img src="Icons/tech/skills-light.svg?v=aws-azure-labels" width="72.1%" alt="Programming Languages: Python, Java, C++, JavaScript, TypeScript, SQL. Databases: Snowflake, Oracle, MySQL, ChromaDB. AI/ML: PyTorch, TensorFlow, scikit-learn, OpenCV, spaCy, NLTK, NVIDIA CUDA. Agent Systems: LangGraph, LangChain, Ollama. Web Interfaces: React, Angular, Streamlit. APIs: FastAPI, REST APIs, GraphQL. Deployment: AWS, Azure. Development: Git, Jupyter.">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/efa9d870e04687f24426c3eeca976582c5f6c4e7/Icons/tech/skills-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/efa9d870e04687f24426c3eeca976582c5f6c4e7/Icons/tech/skills-light.svg">
+    <img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/efa9d870e04687f24426c3eeca976582c5f6c4e7/Icons/tech/skills-light.svg" width="72.1%" alt="Programming Languages: Python, Java, C++, JavaScript, TypeScript, SQL. Databases: Snowflake, Oracle, MySQL, ChromaDB. AI/ML: PyTorch, TensorFlow, scikit-learn, OpenCV, spaCy, NLTK, NVIDIA CUDA. Agent Systems: LangGraph, LangChain, Ollama. Web Interfaces: React, Angular, Streamlit. APIs: FastAPI, REST APIs, GraphQL. Deployment: AWS, Azure. Development: Git, Jupyter.">
   </picture>
 </p>
 
