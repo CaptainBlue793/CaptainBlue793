@@ -11,17 +11,15 @@
     <p align="center"><img src="Alphabets/P.gif" width="14.42%"><img src="Alphabets/A.gif" width="14.42%"><img src="Alphabets/T.gif" width="14.42%"><img src="Alphabets/R.gif" width="14.42%"><img src="Alphabets/A.gif" width="14.42%"></p>
 </div>
 
-<br>
-
 <!-- <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:01FEC5,50:4201FF,100:F401FF&height=6" width="72.1%" />
 </p> -->
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/efa9d870e04687f24426c3eeca976582c5f6c4e7/Icons/tech/skills-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/efa9d870e04687f24426c3eeca976582c5f6c4e7/Icons/tech/skills-light.svg">
-    <img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/efa9d870e04687f24426c3eeca976582c5f6c4e7/Icons/tech/skills-light.svg" width="72.1%" alt="Programming Languages: Python, Java, C++, JavaScript, TypeScript, SQL. Databases: Snowflake, Oracle, MySQL, ChromaDB. AI/ML: PyTorch, TensorFlow, scikit-learn, OpenCV, spaCy, NLTK, NVIDIA CUDA. Agent Systems: LangGraph, LangChain, Ollama. Web Interfaces: React, Angular, Streamlit. APIs: FastAPI, REST APIs, GraphQL. Deployment: AWS, Azure. Development: Git, Jupyter.">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/4427de5fa11d6e9c2113742aa3ff9673f2cb5643/Icons/tech/skills-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/4427de5fa11d6e9c2113742aa3ff9673f2cb5643/Icons/tech/skills-light.svg">
+    <img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/4427de5fa11d6e9c2113742aa3ff9673f2cb5643/Icons/tech/skills-light.svg" width="72.1%" alt="Languages: Python, Java, C++, JavaScript, TypeScript, SQL. Databases: Snowflake, Oracle, MySQL, ChromaDB. AI/ML: PyTorch, TensorFlow, scikit-learn, OpenCV, spaCy, NLTK, NVIDIA CUDA. Agents: LangGraph, LangChain, Ollama. Frontend: React, Angular, Streamlit. APIs: FastAPI, REST APIs, GraphQL. Deployment: AWS, Azure. Tools: Git, Jupyter.">
   </picture>
 </p>
 
@@ -35,6 +33,8 @@
   <a href="https://huggingface.co/Scarletta975"><img src="https://img.shields.io/badge/Hugging%20Face-4201FF?style=for-the-badge" alt="Hugging Face" /></a>
 </p> -->
 
+<!-- Wave footer: remove this comment wrapper to reactivate.
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:F401FF,50:4201FF,100:01FEC5&height=140&section=footer" width="72.1%" />
 </p>
+-->
