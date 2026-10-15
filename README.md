@@ -5,11 +5,13 @@
     <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 -->
 
-<div style="text-align: center;">
-    <p align="center"><img src="Alphabets/P.gif" width="14.42%"><img src="Alphabets/A.gif" width="14.42%"><img src="Alphabets/L.gif" width="14.42%"><img src="Alphabets/A.gif" width="14.42%"><img src="Alphabets/K.gif" width="14.42%"></p>
-    <p align="center"><img src="Icons/3ae02a69724e521e484b933d351d3e9a.gif" width="14.42%"><img src="Alphabets/D.gif" width="14.42%"><img src="Alphabets/E.gif" width="14.42%"><img src="Alphabets/B.gif" width="14.42%"><img src="Icons/3ae02a69724e521e484b933d351d3e9a.gif" width="14.42%"></p>
-    <p align="center"><img src="Alphabets/P.gif" width="14.42%"><img src="Alphabets/A.gif" width="14.42%"><img src="Alphabets/T.gif" width="14.42%"><img src="Alphabets/R.gif" width="14.42%"><img src="Alphabets/A.gif" width="14.42%"></p>
-</div>
+<p align="center">
+    <img src="Alphabets/P.gif" width="14.42%"><img src="Alphabets/A.gif" width="14.42%"><img src="Alphabets/L.gif" width="14.42%"><img src="Alphabets/A.gif" width="14.42%"><img src="Alphabets/K.gif" width="14.42%">
+    <br>
+    <img src="Icons/3ae02a69724e521e484b933d351d3e9a.gif" width="14.42%"><img src="Alphabets/D.gif" width="14.42%"><img src="Alphabets/E.gif" width="14.42%"><img src="Alphabets/B.gif" width="14.42%"><img src="Icons/3ae02a69724e521e484b933d351d3e9a.gif" width="14.42%">
+    <br>
+    <img src="Alphabets/P.gif" width="14.42%"><img src="Alphabets/A.gif" width="14.42%"><img src="Alphabets/T.gif" width="14.42%"><img src="Alphabets/R.gif" width="14.42%"><img src="Alphabets/A.gif" width="14.42%">
+</p>
 
 <!-- <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:01FEC5,50:4201FF,100:F401FF&height=6" width="72.1%" />
