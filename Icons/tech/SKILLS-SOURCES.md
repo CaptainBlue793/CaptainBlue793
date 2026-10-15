@@ -11,6 +11,9 @@ left, right-aligned brand logos, transparent backgrounds, and no tiles, terminal
 markers, or dividers. Each logo has a small centered technology name below it.
 Rows are 80 units high with 48-unit logos, 60-unit icon spacing and 10-unit captions.
 Captions begin 64 units into each row, with 10 units between caption lines.
+The final row has 12 fewer units of bottom padding to bring the footer closer.
+Category labels use Cascadia Mono Bold outlines, preserving the font on all
+devices without requiring an installed font. Technology captions retain Arial.
 All eight categories and 30 technologies are displayed.
 Technology names remain in accessible labels, SVG
 titles/descriptions, and the README image's alternative text.
@@ -26,7 +29,12 @@ node scripts/sync-portfolio-skills.mjs
 An alternate portfolio path can be supplied as the first argument.
 The README pins its image URLs to a published commit to avoid stale GitHub
 images. After publishing regenerated SVGs, update all three image URLs to that
-commit's hash.
+commit's hash. The wave footer URL is pinned to the same commit.
+
+To rebuild the category outlines after changing labels, run
+`scripts/build-category-labels.py` with the `starGPU` Python environment. It uses
+fontTools and the installed `C:/Windows/Fonts/CascadiaMono.ttf` by default;
+an alternate font file can be supplied with `--font`.
 
 Icons copied from the portfolio retain their original geometry. Oracle uses its
 portfolio brand red; AWS and black Simple Icons marks adapt to the theme.
@@ -43,5 +51,11 @@ portfolio brand red; AWS and black Simple Icons marks adapt to the theme.
   https://docs.langchain.com/oss/python/langgraph/overview (official standalone icons).
 - SQL and REST APIs use the portfolio's generic database and code glyphs.
 - Azure reuses the local vector mark from `stack-grid.svg` in `azure.svg`.
+- Category outlines: Microsoft Cascadia Mono, https://github.com/microsoft/cascadia-code.
+  See `CASCADIA-MONO-LICENSE.txt`. The font file itself is not redistributed.
+- `wave-footer.svg` retains the original Capsule Render gradient and animations,
+  with 28 units of empty top space cropped. The README places it immediately
+  below the skills in the same paragraph. Original hosted markup is preserved
+  in a README comment. Source: https://github.com/kyechan99/capsule-render (MIT).
 
 Brand names and marks belong to their respective owners.

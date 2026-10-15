@@ -57,6 +57,8 @@ const iconSize = 48;
 const iconStep = 60;
 const rowHeight = 80;
 const rightPadding = 12;
+const categoryFont = JSON.parse(readFileSync(resolve(root, 'Icons/tech/cascadia-category-labels.json'), 'utf8'));
+const categoryScale = 15 / categoryFont.unitsPerEm;
 function icon(name, theme, accent) {
   const key = name.startsWith('AWS') ? 'AWS' : name.startsWith('Azure') ? 'Azure' : name;
   if (key === 'Azure') return readFileSync(resolve(root, 'Icons/tech/azure.svg'), 'utf8');
@@ -98,9 +100,13 @@ for (const [theme, palette] of Object.entries(themes)) {
       const caption = lines.map((line, lineIndex) => `<tspan x="${center}" y="${top + 64 + lineIndex * 10}">${escape(line)}</tspan>`).join('');
       return `<g aria-label="${escape(name)}"><title>${escape(name)}</title><g transform="translate(${x} ${top + 6}) scale(${iconSize / 24})">${icon(name, theme, palette.text)}</g><text fill="${palette.caption}" font-size="10" text-anchor="middle">${caption}</text></g>`;
     }).join('\n');
-    return `<g data-category="${escape(title)}"><text x="0" y="${top + 36}" fill="${palette.text}" font-size="15" font-weight="700" letter-spacing="0.65">${escape(title.toUpperCase())}</text>\n${technologies}</g>`;
+    const category = categoryFont.labels[title];
+    if (!category) throw new Error(`Missing Cascadia Mono category label: ${title}`);
+    return `<g data-category="${escape(title)}"><path data-font="Cascadia Mono" aria-label="${escape(title.toUpperCase())}" d="${category.path}" transform="translate(0 ${top + 36}) scale(${categoryScale} -${categoryScale})" fill="${palette.text}"><title>${escape(title.toUpperCase())}</title></path>\n${technologies}</g>`;
   }).join('\n');
   const description = rows.map(row => `${row.title}: ${row.items.join(', ')}`).join('; ');
+  // Keep four units below the final caption instead of a whole row's padding.
+  height -= 12;
   const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${canvasWidth}" height="${height}" viewBox="0 0 ${canvasWidth} ${height}" role="img" aria-labelledby="title desc" font-family="Arial,Helvetica,sans-serif">\n<title id="title">Palak Deb Patra — Skills</title>\n<desc id="desc">${escape(description)}</desc>\n${body}\n</svg>\n`;
   writeFileSync(resolve(root, `Icons/tech/skills-${theme}.svg`), svg);
 }
