@@ -4,10 +4,13 @@
 names and brand icons in `Portfolio/src/content.ts` and `Portfolio/src/BrandIcon.tsx`,
 with profile overrides: omit GitHub and rename Cloud to Deployment, adding Azure
 alongside AWS. Both cloud providers use their names without service details.
+The shorter category labels are Languages, Databases, AI/ML, Agents, Frontend,
+APIs, Deployment and Tools.
 They retain the original row design: neutral uppercase category labels on the
 left, right-aligned brand logos, transparent backgrounds, and no tiles, terminal
 markers, or dividers. Each logo has a small centered technology name below it.
-Rows are 88 units high with 48-unit logos, 60-unit icon spacing and 10-unit captions.
+Rows are 80 units high with 48-unit logos, 60-unit icon spacing and 10-unit captions.
+Captions begin 64 units into each row, with 10 units between caption lines.
 All eight categories and 30 technologies are displayed.
 Technology names remain in accessible labels, SVG
 titles/descriptions, and the README image's alternative text.
@@ -21,6 +24,9 @@ node scripts/sync-portfolio-skills.mjs
 ```
 
 An alternate portfolio path can be supplied as the first argument.
+The README pins its image URLs to a published commit to avoid stale GitHub
+images. After publishing regenerated SVGs, update all three image URLs to that
+commit's hash.
 
 Icons copied from the portfolio retain their original geometry. Oracle uses its
 portfolio brand red; AWS and black Simple Icons marks adapt to the theme.

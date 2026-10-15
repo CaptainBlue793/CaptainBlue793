@@ -16,7 +16,14 @@ const rows = [...section.matchAll(/title: '([^']+)',\s*description: '([^']+)'/g)
   .map(([, title, description]) => ({ title, items: description.split(' · ') }));
 if (!rows.length) throw new Error('No portfolio skills found.');
 // Keep profile-specific edits when refreshing from the portfolio.
+const categoryLabels = {
+  'Programming Languages': 'Languages',
+  'Agent Systems': 'Agents',
+  'Web Interfaces': 'Frontend',
+  Development: 'Tools',
+};
 for (const row of rows) {
+  row.title = categoryLabels[row.title] ?? row.title;
   row.items = row.items.filter(name => name !== 'GitHub');
   if (row.title === 'Cloud' || row.title === 'Deployment') {
     row.title = 'Deployment';
@@ -48,7 +55,7 @@ const escape = value => value.replaceAll('&', '&amp;').replaceAll('<', '&lt;').r
 const canvasWidth = 676.6;
 const iconSize = 48;
 const iconStep = 60;
-const rowHeight = 88;
+const rowHeight = 80;
 const rightPadding = 12;
 function icon(name, theme, accent) {
   const key = name.startsWith('AWS') ? 'AWS' : name.startsWith('Azure') ? 'Azure' : name;
@@ -88,7 +95,7 @@ for (const [theme, palette] of Object.entries(themes)) {
       const x = (start + itemIndex * iconStep).toFixed(1);
       const center = (Number(x) + iconSize / 2).toFixed(1);
       const lines = name === 'NVIDIA CUDA' ? ['NVIDIA', 'CUDA'] : [name];
-      const caption = lines.map((line, lineIndex) => `<tspan x="${center}" y="${top + 68 + lineIndex * 12}">${escape(line)}</tspan>`).join('');
+      const caption = lines.map((line, lineIndex) => `<tspan x="${center}" y="${top + 64 + lineIndex * 10}">${escape(line)}</tspan>`).join('');
       return `<g aria-label="${escape(name)}"><title>${escape(name)}</title><g transform="translate(${x} ${top + 6}) scale(${iconSize / 24})">${icon(name, theme, palette.text)}</g><text fill="${palette.caption}" font-size="10" text-anchor="middle">${caption}</text></g>`;
     }).join('\n');
     return `<g data-category="${escape(title)}"><text x="0" y="${top + 36}" fill="${palette.text}" font-size="15" font-weight="700" letter-spacing="0.65">${escape(title.toUpperCase())}</text>\n${technologies}</g>`;
