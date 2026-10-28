@@ -24,7 +24,7 @@ const categoryLabels = {
 };
 for (const row of rows) {
   row.title = categoryLabels[row.title] ?? row.title;
-  row.items = row.items.filter(name => name !== 'GitHub');
+  row.items = row.items.filter(name => !['GitHub', 'JavaScript', 'React'].includes(name));
   if (row.title === 'Cloud' || row.title === 'Deployment') {
     row.title = 'Deployment';
     row.items = row.items.map(name => name.replace(/^(AWS|Azure)\s*\(.*\)$/, '$1'));
@@ -41,10 +41,10 @@ const assets = {
   Angular: 'angular.svg', AWS: 'aws.svg', Jupyter: 'jupyter.svg',
 };
 const simple = {
-  'C++': 'siCplusplus', JavaScript: 'siJavascript', TypeScript: 'siTypescript',
+  'C++': 'siCplusplus', TypeScript: 'siTypescript',
   Snowflake: 'siSnowflake', PyTorch: 'siPytorch', TensorFlow: 'siTensorflow',
   spaCy: 'siSpacy', 'NVIDIA CUDA': 'siNvidia', Ollama: 'siOllama',
-  React: 'siReact', Streamlit: 'siStreamlit', FastAPI: 'siFastapi',
+  Streamlit: 'siStreamlit', FastAPI: 'siFastapi',
   GraphQL: 'siGraphql', Git: 'siGit',
 };
 const themes = {

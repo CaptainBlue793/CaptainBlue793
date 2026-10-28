@@ -2,7 +2,7 @@
 
 `skills-dark.svg` and `skills-light.svg` use the categories, order, technology
 names and brand icons in `Portfolio/src/content.ts` and `Portfolio/src/BrandIcon.tsx`,
-with profile overrides: omit GitHub and rename Cloud to Deployment, adding Azure
+with profile overrides: omit GitHub, JavaScript and React, and rename Cloud to Deployment, adding Azure
 alongside AWS. Both cloud providers use their names without service details.
 The shorter category labels are Languages, Databases, AI/ML, Agents, Frontend,
 APIs, Deployment and Tools.
@@ -14,7 +14,7 @@ Captions begin 64 units into each row, with 10 units between caption lines.
 The final row has 12 fewer units of bottom padding to bring the footer closer.
 Category labels use Cascadia Mono Bold outlines, preserving the font on all
 devices without requiring an installed font. Technology captions retain Arial.
-All eight categories and 30 technologies are displayed.
+All eight categories and 28 technologies are displayed.
 Technology names remain in accessible labels, SVG
 titles/descriptions, and the README image's alternative text.
 All images are embedded locally; no icon service is needed to display them.
@@ -27,9 +27,8 @@ node scripts/sync-portfolio-skills.mjs
 ```
 
 An alternate portfolio path can be supplied as the first argument.
-The README pins its image URLs to a published commit to avoid stale GitHub
-images. After publishing regenerated SVGs, update all three image URLs to that
-commit's hash. The wave footer URL is pinned to the same commit.
+The README uses relative URLs for the skills SVGs so it displays the version
+from the current commit. The wave footer URL remains pinned to a published commit.
 
 To rebuild the category outlines after changing labels, run
 `scripts/build-category-labels.py` with the `starGPU` Python environment. It uses
@@ -41,8 +40,8 @@ portfolio brand red; AWS and black Simple Icons marks adapt to the theme.
 
 - Devicon (MIT): Python, Java, MySQL, scikit-learn, OpenCV, Angular, AWS, and Jupyter.
   See [the license](../DEVICON-LICENSE.txt) and https://github.com/devicons/devicon.
-- Simple Icons (CC0): C++, JavaScript, TypeScript, Snowflake, PyTorch, TensorFlow,
-  spaCy, NVIDIA, Ollama, React, Streamlit, FastAPI, GraphQL, and Git.
+- Simple Icons (CC0): C++, TypeScript, Snowflake, PyTorch, TensorFlow,
+  spaCy, NVIDIA, Ollama, Streamlit, FastAPI, GraphQL, and Git.
   https://github.com/simple-icons/simple-icons
 - Chroma: https://www.trychroma.com/ (colored logomark).
 - Oracle: https://static.oracle.com/cdn/fnd/gallery/2610.0.0/images/ico-oracle-o.svg
