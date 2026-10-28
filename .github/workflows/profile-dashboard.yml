@@ -1,0 +1,28 @@
+name: Refresh profile dashboard
+
+on:
+  schedule:
+    - cron: "23 5 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build dashboard from public GitHub data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/build-profile-dashboard.py
+      - name: Commit changed graphics
+        run: |
+          git add Icons/tech/dashboard-light.svg Icons/tech/dashboard-dark.svg
+          if git diff --cached --quiet; then exit 0; fi
+          git -c user.name=github-actions -c user.email=github-actions@users.noreply.github.com commit -m "Refresh profile dashboard metrics"
+          git push origin HEAD:main

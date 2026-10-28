@@ -7,6 +7,25 @@
 
 <p align="center"><img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/2ec2c085e1c487f331a4ab2d83a532b8b56776f3/Alphabets/P.gif" width="14.42%" align="top"><img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/2ec2c085e1c487f331a4ab2d83a532b8b56776f3/Alphabets/A.gif" width="14.42%" align="top"><img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/2ec2c085e1c487f331a4ab2d83a532b8b56776f3/Alphabets/L.gif" width="14.42%" align="top"><img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/2ec2c085e1c487f331a4ab2d83a532b8b56776f3/Alphabets/A.gif" width="14.42%" align="top"><img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/2ec2c085e1c487f331a4ab2d83a532b8b56776f3/Alphabets/K.gif" width="14.42%" align="top"><br><img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/2ec2c085e1c487f331a4ab2d83a532b8b56776f3/Icons/3ae02a69724e521e484b933d351d3e9a.gif" width="14.42%" align="top"><img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/2ec2c085e1c487f331a4ab2d83a532b8b56776f3/Alphabets/D.gif" width="14.42%" align="top"><img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/2ec2c085e1c487f331a4ab2d83a532b8b56776f3/Alphabets/E.gif" width="14.42%" align="top"><img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/2ec2c085e1c487f331a4ab2d83a532b8b56776f3/Alphabets/B.gif" width="14.42%" align="top"><img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/2ec2c085e1c487f331a4ab2d83a532b8b56776f3/Icons/3ae02a69724e521e484b933d351d3e9a.gif" width="14.42%" align="top"><br><img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/2ec2c085e1c487f331a4ab2d83a532b8b56776f3/Alphabets/P.gif" width="14.42%" align="top"><img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/2ec2c085e1c487f331a4ab2d83a532b8b56776f3/Alphabets/A.gif" width="14.42%" align="top"><img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/2ec2c085e1c487f331a4ab2d83a532b8b56776f3/Alphabets/T.gif" width="14.42%" align="top"><img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/2ec2c085e1c487f331a4ab2d83a532b8b56776f3/Alphabets/R.gif" width="14.42%" align="top"><img src="https://raw.githubusercontent.com/CaptainBlue793/CaptainBlue793/2ec2c085e1c487f331a4ab2d83a532b8b56776f3/Alphabets/A.gif" width="14.42%" align="top"></p>
 
+<p align="center">Building AI systems, retrieval tools, and interactive learning experiences.</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="Icons/tech/dashboard-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="Icons/tech/dashboard-light.svg">
+    <img src="Icons/tech/dashboard-light.svg" width="72.1%" alt="GitHub at a glance: public repositories, stars received, and followers">
+  </picture>
+</p>
+
+<p align="center"><strong>Selected work</strong></p>
+
+<table align="center" width="72%">
+  <tr><th align="left">Project</th><th align="left">What it shows</th></tr>
+  <tr><td><a href="https://github.com/CaptainBlue793/palak-engineering-atlas">Engineering Atlas</a></td><td>150 interactive chapters on system design, ML, AI systems, and algorithms.</td></tr>
+  <tr><td><a href="https://github.com/CaptainBlue793/Memex">Memex</a></td><td>Local-first retrieval with hybrid search, agent routing, and an evaluation harness.</td></tr>
+  <tr><td><a href="https://github.com/CaptainBlue793/CodeShift">CodeShift</a></td><td>Code migration that checks translated modules against the originals on matching inputs.</td></tr>
+</table>
+
 <!-- <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=0:01FEC5,50:4201FF,100:F401FF&height=6" width="72.1%" />
 </p> -->
